@@ -1,0 +1,13 @@
+version: 0.0
+os: linux
+files:
+   - source: /
+     destination: /var/www/site2
+permissions:
+   - object: /var/www/site2
+     pattern: "**"
+     owner: apache
+     group: apache
+     mode: 755
+     type:
+       - file
